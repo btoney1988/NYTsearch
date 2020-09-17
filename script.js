@@ -9,5 +9,9 @@ $.ajax({
 }).then(function (response) {
   $("#search-button").on("click", function () {
     console.log(response);
+    var topArticles = $("#top-articles");
+    topArticles.append(response);
   })
+
+
 });
